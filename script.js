@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const heartBtn = document.getElementById('heartBtn');
 
@@ -10,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function createHearts() {
     const heart = document.createElement('div');
     heart.classList.add('heart');
-    heart.style.left = `${Math.random() * 100}%`; // Posición horizontal aleatoria
+    heart.style.left = `${Math.random() * 100}vw`; // Posición horizontal aleatoria
     document.body.appendChild(heart);
 
     // Eliminar el corazón después de un tiempo
