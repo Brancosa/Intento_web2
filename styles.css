@@ -57,3 +57,43 @@ body, html {
     from { transform: scale(0.8); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
 }
+
+/* Estilos para el botón */
+button#heartBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#heartBtn:hover {
+    background-color: #FF1493;
+}
+
+/* Estilos para los corazones */
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    animation: fall 4s ease-out forwards;
+    background-image: url('corazon.png'); /* Cambiar a la ruta correcta de tu imagen de corazón */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
