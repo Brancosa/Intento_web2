@@ -14,7 +14,7 @@ body, html {
 }
 
 .container {
-    width: 45%; /* Ajusta el ancho del contenedor */
+    width: 60%; /* Ajusta el ancho del contenedor */
     max-width: 400px; /* Ancho máximo del contenedor */
     text-align: center;
     color: white;
