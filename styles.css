@@ -14,7 +14,8 @@ body, html {
 }
 
 .container {
-    width: 35%;
+    width: 45%; /* Ajusta el ancho del contenedor */
+    max-width: 400px; /* Ancho máximo del contenedor */
     text-align: center;
     color: white;
     background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
